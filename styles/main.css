@@ -1,0 +1,946 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+
+
+html {
+  box-sizing: border-box;
+}
+
+*{
+  color: black;
+}
+
+
+.icon{
+ position: absolute;
+ top: 50%
+ left: 50%;
+ transform: translate(-50%, -50%);
+ width: 80px;
+ height: 55px;
+ cursor: pointer;
+}
+.hamburger
+{
+  width: 50px;
+  height: 6px;
+  background: #000;
+  position: absolute;
+  top: 89%;
+  left: 89%;
+  transform: translate(-50%, -50%);
+  transition: .5s;
+}
+.hamburger:before,
+.hamburger:after
+{
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  background: #000;
+  transition: .5s;
+}
+.hamburger:before
+{
+    top: -16px;
+}
+
+.hamburger:after
+{
+    top: 16px;
+}
+
+.icon.activemenu .hamburger
+{
+  background-color: rgba(0,0,0,0);
+}
+.icon.activemenu .hamburger:before
+{
+  top: 0;
+  transform: rotate(45deg)
+}
+
+.icon.activemenu .hamburger:after
+{
+  top: 0;
+  transform: rotate(135deg)
+}
+
+.fa-facebook-square:before {
+    font-size: 20px;
+}
+
+.fa-twitter-square:before {
+    font-size: 20px;
+}
+
+
+.h1 {
+  font-family: 'Courgette', Regular;
+  color: black;
+  font-size: 18px;
+  text-align: center;
+}
+
+.Naam{
+  font-family: 'Courgette', Regular;
+  color: black;
+  text-align: center;
+  font-size: 12px;
+}
+
+h2 {
+  font-family: 'Roboto', black;
+  font-size: 18px;
+  text-align: center;
+  color: #000000;
+  margin-top: 15px;
+}
+
+h3{
+  font-family: 'Roboto', bold;
+  font-size: 14px;
+  text-align: center;
+  color: #000000;
+  margin-top: 4px;
+}
+
+#home{
+  background-color: #FF7A00;
+  transition: max-height 0.25, background-color 0.6s 2s;
+}
+
+#winkel{
+  background-color: #FF7A00;
+}
+
+#overkaas{
+  background-color: #FF7A00;
+}
+
+
+.h4{
+  font-size: 9px;
+  line-height: 11px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  color: black;
+  font-family: Roboto, Light;
+  margin-top: 10px;
+}
+
+.Kopje1{
+  border-bottom: 2px solid black;
+  width: 152px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.Kopje2{
+  border-bottom: 2px solid black;
+  width: 152px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.Kopje3{
+  border-bottom: 2px solid black;
+  width: 152px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.Kopje4{
+  border-bottom: 2px solid black;
+  width: 252px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#nieuwsarchief{
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  line-height: 20px;
+  width: 222px;
+}
+
+.icoontjes{
+  font-size: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 5px;
+  width: 100%
+}
+
+ul{
+  list-style-type: none;
+}
+
+li{
+  float: left;
+}
+
+iframe{
+  background-color: white;
+  border-color: black;
+  border-width: 1px;
+  width:242px; 
+  height:409px;
+  overflow:hidden;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5);
+}
+
+p{
+  font-family: Roboto, Regular;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  margin: 10px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  font-family: Roboto, Light;
+  font-size: 18px;
+}
+
+.FooterLink{
+  font-size: 12px;
+  line-height: 14px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  display: block;
+  text-align: center;
+  color: black;
+  font-family: Roboto, Light; 
+}
+
+.Tekst{
+  max-width: 303px;
+  height: 183px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: justify;
+}
+
+.Tekst2{
+  max-width: 303px;
+  height: 61px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: justify;
+}
+
+.KaasBewijs{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5);
+}
+
+.FotoPersoneel{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5);
+}
+
+.WeblogFoto{
+  width: 159px;
+  height: 102px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5);
+}
+
+.Rechts2{
+      display: none;
+}
+
+nav {
+  display: flex;
+  flex-flow: column;
+  padding: 0;
+  margin: 0;
+}
+
+.LeesMeer{
+  font-size: 13px;
+  color: #FF7A00;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: column /*wrap*/;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.menutoggle a{
+  font-size: 30px;
+  color: #000000;
+  text-decoration: none;
+  position: absolute;
+  top: 5px;
+}
+
+.active{
+  height: 41%;
+  width: 72%;
+  max-width: 360px;
+  display: block;
+  background-color: white;
+  color: black;
+  position: absolute;
+}
+
+.activemenu{
+  width: 77px;
+  height: 54px;
+  max-width: 360px;
+  display: block;
+  color: black;
+  position: absolute;
+}
+
+
+.inactive{
+  background-color: black;
+  display: none;
+  max-height: 0px;
+}
+
+nav ul li {
+  padding: 1em;
+}
+
+nav ul li:hover {
+  background-color: rgba(50, 50, 50, 0.5);
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+}
+
+.OranjeTekst{
+  color: #FF7A00;
+  font-size: 15px;
+}
+
+
+.header{
+    background-color: #FFF963;
+    height: 53px;
+}
+
+.intro{
+    background-color: #FFFFFF;
+    height: 455px;
+    padding-bottom: 32px;    
+}
+.weblog{
+    background-color: #FFF963;
+    height: 265px;
+}
+.nieuwsarchief{
+    background-color: #ffffff;
+    height: 195px;
+}
+.facebook{
+    background-color: #FFF963;
+    height: 480px;
+    margin-bottom: 25px;
+}
+.footer{
+    background-color: #FFF963;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 361px) {
+  .h1 {
+  font-size: 24px;
+}
+
+p{
+  font-size: 14px;
+}
+
+h2 {
+  font-size: 19px;
+}
+
+.h4{
+  font-size: 14px;
+}
+
+.icon{
+    width: 85px;
+    height: 80px;
+}
+
+.fa-facebook-square:before {
+    font-size: 25px;
+}
+
+.fa-twitter-square:before {
+    font-size: 25px;
+}
+
+
+.OranjeTekst{
+  color: #FF7A00;
+  font-size: 15px;
+}
+
+.LeesMeer{
+  font-size: 14px;
+  color: #FF7A00;
+}
+
+.menutoggle a {
+    font-size: 40px;
+    top: 0px;
+}
+
+.Naam{
+  font-size: 18px;
+}
+
+.Links{
+    width:59%;
+    margin-left: -6%;
+    float: left;
+    text-align: left;
+}
+
+.Links iframe{
+   width:100%;
+}
+
+.Rechts{
+    width:47%;
+    float: right;
+}
+
+.Clearfix{
+    clear:both
+}
+
+.Links2{
+    float: left;
+    text-align: left;
+}
+
+.Links2 iframe{
+}
+
+.Rechts2{
+    float: right;
+    display: block;
+}
+
+.Clearfix2{
+    clear:both
+}
+
+.Kopje1{
+  width: 163px;
+}
+
+
+
+.Tekst{
+  max-width: 450px;
+  height: 165px;
+  font-size: 14px;
+}
+
+.Tekst2{
+  max-width: 450px;
+  height: 66px;
+  font-size: 14px;
+}
+
+.WeblogFoto{
+  width: 220px;
+  height: 165px;
+}
+
+#nieuwsarchief{
+  font-size: 14px;
+  line-height: 25px;
+  width: 222px;
+}
+
+.FacebookBerichten{
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;  
+}
+
+iframe{
+  width:218px; 
+  height:385px;
+}
+
+.FooterLink{
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 10px;
+}
+
+.FooterLink{
+  font-size: 18px;
+}
+
+span{
+  font-size:36px;
+} 
+
+.header{
+    height: 64px;
+}
+
+.active{
+    height: 44%;
+    width: 72%;
+}
+
+.intro{
+    height: 490px;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;    
+}
+
+.weblog{
+    height: 340px;
+}
+.nieuwsarchief{
+    height: 215px;
+}
+.facebook{
+    height: 470px;
+    margin-bottom: 40px; 
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 769px) { 
+
+.h1{
+  font-size: 36px;
+  margin-top: 20px;
+}
+
+.Naam{
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+.LeesMeer{
+  font-size: 18px;
+  color: #FF7A00;
+}
+
+.active{
+  height: 50px;
+  max-width: 800px;
+  width: 100%;
+  display: block;
+  background-color: white;
+  position: static;
+  color: #FF7A00;
+}
+
+
+.inactive{
+  height: 50px;
+  width: 100%;
+  display: block;
+  background-color: white;
+  position: static;
+  color: #FF7A00;
+}
+
+.fa-facebook-square:before {
+    font-size: 30px;
+}
+
+.fa-twitter-square:before {
+    font-size: 30px;
+}
+
+
+#nav {
+display:table; 
+margin:0 auto; 
+text-align:center; 
+}
+
+#nav a {
+    font-size: 12px;
+}
+
+#nav ul {
+list-style:none;
+display:inline-block; 
+}
+
+#nav ul {
+display:inline; 
+}
+
+#nav li {
+  display: inline;
+  border-color: #FF7A00;
+  border-width: 2px;
+  border-style: solid;
+  color: #FF7A00;
+  width: 125px;
+  margin: 3px;
+  height: 15px;
+  font-size: 12px;
+  background-color: white;
+}
+
+.Oranje{
+  color: #FF7A00;
+}
+
+#nav a {
+}
+
+.menutoggle{
+  display: none;
+}
+
+  
+h2 {
+  font-size: 24px;
+}
+
+#nieuwsarchief{
+  font-size: 18px;
+  margin-top: 15px;
+  width: 282px;
+  line-height: 33px;
+
+}
+
+p{
+  font-size: 18px;
+}
+
+span{
+  font-size:40px;
+} 
+
+.Kopje1{
+  width: 222px;
+}
+
+.Kopje3{
+  width: 201px;
+  margin-top: 20px;
+}
+
+.Kopje4{
+  width: 321px;
+}
+
+.Tekst{
+  max-width: 870px;
+  height: 164px;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.Tekst2{
+  max-width: 239px;
+  height: 179px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.Links{
+    width:44%;
+}
+
+.Rechts{
+    width:26.65%;
+    float: right;
+}
+
+.WeblogFoto{
+  width: 239px;
+  height: 179px;
+}
+
+.Samen{
+  width: 515px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;   
+}
+
+.Links3{
+    width:50%;
+    float: left;
+    text-align: left;
+     margin-top: 0px;
+}
+
+.Rechts3{
+    width:50%;
+    float: right;
+    margin-top: 14px;
+}
+
+.GrootSamen{
+  min-width: 1360px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;   
+}
+
+.GrootLinks{
+    width:50%;
+    float: left;
+    text-align: left;
+     margin-top: 0px;
+}
+
+.GrootRechts{
+    width:50%;
+    float: right;
+    margin-top: 14px;
+}
+
+iframe{
+  width:290px; 
+  height:438px;
+}
+
+.FacebookBerichten{
+  max-width: 595px; 
+}
+
+.Clearfix3{
+    clear:both
+}
+
+.FooterLink{
+  font-size: 22px;
+}
+
+.h4{
+  font-size: 18px;
+}
+
+.header{
+    height: 101px;
+}
+
+.intro{
+    height: 525px;
+    max-width: 870px; 
+}
+
+.weblog{
+    background-color: #FFF963;
+    height: 300px;
+}
+.nieuwsarchief{
+    background-color: #FFF963;
+    height: 300px;
+    background-color: #FFF963;
+}
+.facebook{
+    background-color: #ffffff;
+    height: 495px;
+    margin-bottom: 40px;
+   
+}
+
+}
+
+
+
+@media only screen and (min-width: 1367px) {
+
+.h1{
+  font-size: 38px;
+  margin-top: 25px;
+}
+
+#nav li{
+  width: 132px;
+  margin: 4px;
+  height: 20px;
+  font-size: 16px;
+}
+
+a{
+  font-size: 20px;
+}
+.Naam{
+  font-size: 32px;
+}
+
+.Kopje1{
+  font-size: 26px;
+  width: 244px;
+}
+
+.Tekst{
+  max-width: 990px;
+  height: 205px;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.Tekst2{
+  max-width: 272px;
+  height: 205px;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.LeesMeer{
+  font-size: 20px;
+  color: #FF7A00;
+}
+
+
+.Kopje4{
+  width: 365px;
+}
+
+.fa-facebook-square:before {
+    font-size: 35px;
+}
+
+.fa-twitter-square:before {
+    font-size: 35px;
+}
+
+span{
+  font-size:42px;
+} 
+
+p{
+  font-size: 20px;
+  margin-left: 42px;
+}
+
+.WeblogFoto{
+  width: 272px;
+  height: 202px;
+}
+
+.Kopje2{
+  width: 188px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+.Samen{
+  width: 600px;
+
+}
+
+.Kopje3{
+  width: 229px;
+}
+
+#nieuwsarchief{
+  font-size: 20px;
+  width: 312px;
+  height: 207px;
+  line-height: 37px;
+}
+
+.FacebookBerichten{
+  max-width: 660px; 
+}
+
+iframe{
+  width: 322px; 
+  height: 470px;
+}
+
+.FooterLink{
+  font-size: 24px;
+}
+
+.h4{
+  font-size: 20px;
+
+}
+
+.header{
+    height: 115px;
+}
+
+.intro{
+    height: 620px; 
+}
+
+.weblog{
+    height: 340px;
+}
+.nieuwsarchief{
+    height: 340px;
+}
+.facebook{
+    height: 535px;
+    margin-bottom: 40px; 
+}
+
+
+}
+  

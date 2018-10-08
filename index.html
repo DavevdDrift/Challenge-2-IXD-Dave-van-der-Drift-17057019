@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="UTF-8" />
+		<title>De KaasSpeciaalZaak</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Asap+Condensed" rel="stylesheet" />
+		<link type="text/css" href="styles/main.css" rel="stylesheet" />
+		<link type="text/css" href="styles/grid-layout.css" rel="stylesheet" />
+
+	    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+
+	    	<!--Hier staat apart nog Javascript omdat het niet lukte om het in een javascript bestand te gooien, zonder dat het niet meer werkte.-->
+		  	<script type="text/javascript">
+				$(document).ready(function(){
+					$('.icon').click(function(){
+					$('.icon').toggleClass('activemenu');
+					})
+				}) 
+		    </script>
+
+
+	</head>
+	<body>
+	  <div class="grid-container">
+
+	  	<div class="menu">
+
+		  		<div class="menutoggle">
+		  			<a class="hambergermenu" href="#">
+  						<div class="icon">
+		  				<div class="hamburger"></div>	
+		  				</div>	
+
+		  			</a>
+		  		</div>
+
+
+
+		  		<div id="nav">
+				    <nav id="menu" class="inactive">
+				    	<ul id="nav">
+				    		<li id="home"><a class="Oranje" href="#Home">Home</a></li>
+				    		<li id="over"><a class="Oranje" href="#Over">Wie zijn wij?</a></li>
+				    		<li id="winkel"><a class="Oranje" href="#Winkel">Kijkje in de winkel</a></li>
+				    		<li id="contact" ><a class="Oranje" href="#Contact">Waar, wanneer, contact</a></li>
+				    		<li id="overkaas" ><a class="Oranje" href="#OverKaas">Over kaas gesproken</a></li>   		
+				    	</ul>
+				    </nav>
+				</div>    
+
+		</div>	    
+
+	    <div class="header"><!--header-->
+	    	<p class="h1">De kaasspeciaalzaak</p> 
+	    	<p class="Naam">Ed boele</p>
+		</div> 
+
+	    <div class="intro"><!--kopje 1 Intro-->
+	    	<h2 class="Kopje1">Passie voor kaas</h2>
+
+	    	<div class="Links"><p><span class="GroteLetter">W</span>elkom bij de kaasspeciaalzaak!</p></div>
+
+	    	<div class="Rechts">
+	    			<img class="KaasBewijs" 
+		    			alt="KaasBewijs"
+			            src="images/kaasbewijs.jpg"
+		    			srcset="
+		    			images/kaasbewijs220.jpg 220w,
+	                    images/kaasbewijs205.jpg 205w,
+	                    images/kaasbewijs191.jpg 191w
+	                    "
+			            sizes="(max-width: 360px) 191px,
+			            	   (max-width: 768px) 205px,
+			            	   220px">
+	    	</div>
+
+	    	<div class="Clearfix"></div>
+
+	    	<p class="Tekst">Kaasspeciaalzaak Ed Boele in Den Haag. Al een paar keer waren we de beste of bijna-beste kaasspecialist van Nederland en nog steeds draaien we mee in de top. Want wij hebben een passie voor kaas, die wij graag met onze klanten willen delen.<br><br>
+
+			In onze ruime winkel aan de Fahrenheitstraat hebben we een assortiment kazen om U tegen te zeggen. Een overvloed aan Nederlandse en buitenlandse heerlijkheden. En elke kaas heeft z’n eigen verhaal. Een verhaal dat wij u graag doorvertellen. Want wij hebben er kaas van gegeten.</p>
+
+	    			<img class="FotoPersoneel" 
+		    			alt="Foto van het personeel bij een prijsuitreiking"
+			            src="images/FotoPersoneel.jpg"
+		    			srcset="
+		    			images/FotoPersoneel557.jpg 557w,
+	                    images/FotoPersoneel489.jpg 489w,
+	                    images/FotoPersoneel450.jpg 450w,
+	                    images/FotoPersoneel202.jpg 202w	                    
+	                    "
+			            sizes="(max-width: 360px) 300px,
+			            	   (max-width: 768px) 450px,
+			            	   (max-width: 1367px) 489px,
+			            	   557px">
+	    </div> 
+
+	    <div class="weblog"><!--kopje 2 Weblog-->
+
+	    		<h2 class="Kopje2">Onze Weblog</h2>
+		    	<h3>Cheese, Bra Piemonte.</h3>
+
+		    <div class="Samen">	
+			    <div class="Links3">
+			    	<p class="Tekst2">Vorige week zijn we samen met ons kaasteam op studiereis geweest naar Piemonte. Op zondag een bezoek aan het mooie stadje Bra waar eens in de twee jaar het hele stadje kaas uitademd.
+			    	<a href="LinkLeesMeer" class="LeesMeer">>Lees meer</a></p>
+			    </div>
+			    <div class="Rechts3">			 
+			    		<img class="WeblogFoto" 
+		    			alt="bewijs van beste kaaszaak"
+			            src="images/FotoWeblog.jpg"
+		    			srcset="
+		    			images/FotoWeblog272.jpg 272w,
+	                    images/FotoWeblog239.jpg 239w,
+	                    images/FotoWeblog220.jpg 220w,
+	                    images/FotoPersoneel159.jpg 159w	                    
+	                    "
+			            sizes="(max-width: 360px) 159px,
+			            	   (max-width: 768px) 220px,
+			            	   (max-width: 1367px) 239px,
+			            	   272px">
+			    </div>
+
+			</div>    
+	    </div>
+
+	    <div class="nieuwsarchief"><!--kopje 3 Nieuwsarchief-->
+	    	<h2 class="Kopje3">Nieuwsarchief</h2>
+	    	<div id="nieuwsarchief">
+				<ul>
+					<li class="OranjeTekst">| <a href="/weblog" class="OranjeTekst">Weblog</a></li>
+					<li class="OranjeTekst">| <a href="/nieuwsbrieven" class="OranjeTekst">Nieuwsbrieven</a></li>
+				</ul>
+				<br>
+				<ul>
+					<li class="OranjeTekst">| <a href="/nieuws/2018" class="OranjeTekst">2018</a></li>
+					<li class="OranjeTekst">| <a href="/nieuws/2017" class="OranjeTekst">2017</a></li>
+					<li class="OranjeTekst">| <a href="/nieuws/2016" class="OranjeTekst">2016</a><br></li>
+					<br>
+					<li class="OranjeTekst">| <a href="/nieuws/2015" class="OranjeTekst">2015</a></li>
+					<li class="OranjeTekst">| <a href="/nieuws/2014" class="OranjeTekst">2014</a></li>
+					<li class="OranjeTekst">| <a href="/nieuws/2013" class="OranjeTekst">2013</a><br></li>
+					<br>
+					<li class="OranjeTekst">| <a href="/nieuws/2012" class="OranjeTekst">2012</a></li>
+					<li class="OranjeTekst">| <a href="/nieuws/2011" class="OranjeTekst">2011</a></li>
+					<li class="OranjeTekst">| <a href="/nieuws/2010" class="OranjeTekst">2010</a><br></li>
+					<br>
+					<li class="OranjeTekst">| <a href="/nieuws/2009" class="OranjeTekst">2009</a></li>
+					<li class="OranjeTekst">| <a href="/nieuws/2007" class="OranjeTekst">2007</a></li>
+					<li class="OranjeTekst">| <a href="/nieuws/2006" class="OranjeTekst">2006</a><br></li>
+					<br>
+					<li class="OranjeTekst">| <a href="/nieuws/2005" class="OranjeTekst">2005</a><br></li>
+				</ul>
+			</div>
+	    </div>
+
+	    <div class="facebook"><!--Kopje 4 Facebook-->
+	    	<h2 class="Kopje4">Wij zijn ook op facebook</h2>
+	    	<div class="FacebookBerichten">
+	  		<iframe class="Links2" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F1752550148310300%2Fphotos%2Fa.1859235794308401%2F2085977318300913%2F%3Ftype%3D3&width=205&show_text=true&height=478&appId" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
+	  		<iframe class="Rechts2" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F1752550148310300%2Fphotos%2Fa.1859235794308401%2F2085977318300913%2F%3Ftype%3D3&width=205&show_text=true&height=478&appId" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+	  		</div>
+
+	  		<div class="Clearfix2"></div>
+
+	    </div>
+
+	    <div class="footer">
+	    	<a class="FooterLink" href="Disclaimer">Disclaimer</a>
+	    	<a class="FooterLink" href="Cookies">Cookies</a>
+
+	    	<div class="icoontjes">
+		    	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+		    	<a href="https://nl-nl.facebook.com/pages/category/Specialty-Grocery-Store/De-KaasspeciaalzaakEd-Boele-1752550148310300/"><i class="fab fa-facebook-square"></i></a>
+				<a href="https://twitter.com/EdBoele"><i class="fab fa-twitter-square"></i></a>
+			</div>
+
+	    	<p class="h4">Gemaakt door Dave van der Drift</h4>
+	    	&copy; <script>document.write(new Date().getFullYear());</script>, De Kaasspeciaalzaak.
+	    </div> 
+	    <script type="text/javascript" src="scripts/main.js"></script>
+	</body>
+</html>
+
+<!--
+Te doen:
+
+Zondag:
+
+
+
+
+Maandag:
+
+-Online zetten
+
+-pagespeedtools/speedtest uitvoeren(optimalisatie)
+
+-Toelichting schrijven (eventueel zondag al)
+
+-Kruisje aanpassen in Figma en bestanden opslaan in mapje
+
+-Overige plaatjes verwijderen
+
+Alles klaar hebben om het dinsdag in te leveren
+
+
+
+-->
